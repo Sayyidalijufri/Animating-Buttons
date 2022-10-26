@@ -47,3 +47,39 @@ code {
   color: var(--dark-text-color);
   transition: all 0.4s ease;
 }
+.loading .loader{
+  display: block;
+}
+
+.loading .loader-overlay{
+  display: block;
+}
+
+.loader{
+  position: absolute;
+  background-image: url(https://animation-nation.netlify.app/Art/mehul1011/loading.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+
+.loader-overlay{
+  width: 100vw;
+  height: 100vh;
+  background: #1d1d1d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+
+body.loading{
+  overflow: hidden;
+}
